@@ -36,12 +36,12 @@ window.addEventListener('load', () => {
         taskElementActionsEdit.classList.add("edit");
         taskElementActionsEdit.innerHTML = "Edit";
 
-        const taslElementActionsDelete = document.createElement('button');
-        taslElementActionsDelete.classList.add("delete");
-        taslElementActionsDelete.innerHTML = "Delete";
+        const taskElementActionsDelete = document.createElement('button');
+        taskElementActionsDelete.classList.add("delete");
+        taskElementActionsDelete.innerHTML = "Delete";
 
         taskElementActions.appendChild(taskElementActionsEdit);
-        taskElementActions.appendChild(taslElementActionsDelete);
+        taskElementActions.appendChild(taskElementActionsDelete);
 
         taskElement.appendChild(taskElementActions);
 
@@ -60,7 +60,7 @@ window.addEventListener('load', () => {
             }
         });
 
-        taslElementActionsDelete.addEventListener('click', () => {
+        taskElementActionsDelete.addEventListener('click', () => {
             listElement.removeChild(taskElement);
         });
     })
